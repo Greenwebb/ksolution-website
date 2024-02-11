@@ -1,0 +1,319 @@
+@font-face {
+    font-family: 'cmsmasters-demo-icons';
+    src: url('fonts/cmsmasters-demo-iconse850.eot?7myhs0');
+    src: url('fonts/cmsmasters-demo-iconse850.eot?7myhs0#iefix') format('embedded-opentype'), url('fonts/cmsmasters-demo-iconse850.ttf?7myhs0') format('truetype'), url('fonts/cmsmasters-demo-iconse850.woff?7myhs0') format('woff'), url('fonts/cmsmasters-demo-iconse850.svg?7myhs0#cmsmasters-demo-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="cmsms-demo-icon-"],
+[class*=" cmsms-demo-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'cmsmasters-demo-icons' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.cmsms-demo-icon-safebox:before {
+    content: "\e900";
+}
+
+.cmsms-demo-icon-point-of-service:before {
+    content: "\e901";
+}
+
+.cmsms-demo-icon-gold-ingot:before {
+    content: "\e902";
+}
+
+.cmsms-demo-icon-smartphone:before {
+    content: "\e903";
+}
+
+.cmsms-demo-icon-money:before {
+    content: "\e904";
+}
+
+.cmsms-demo-icon-euro:before {
+    content: "\e905";
+}
+
+.cmsms-demo-icon-dollar:before {
+    content: "\e906";
+}
+
+.cmsms-demo-icon-smartphone-1:before {
+    content: "\e907";
+}
+
+.cmsms-demo-icon-search:before {
+    content: "\e908";
+}
+
+.cmsms-demo-icon-coin:before {
+    content: "\e909";
+}
+
+.cmsms-demo-icon-bitcoin:before {
+    content: "\e90a";
+}
+
+.cmsms-demo-icon-check:before {
+    content: "\e90b";
+}
+
+.cmsms-demo-icon-briefcase-1:before {
+    content: "\e90c";
+}
+
+.cmsms-demo-icon-exchange:before {
+    content: "\e90d";
+}
+
+.cmsms-demo-icon-invoice:before {
+    content: "\e90e";
+}
+
+.cmsms-demo-icon-loss:before {
+    content: "\e90f";
+}
+
+.cmsms-demo-icon-profits:before {
+    content: "\e910";
+}
+
+.cmsms-demo-icon-growth:before {
+    content: "\e911";
+}
+
+.cmsms-demo-icon-calculator:before {
+    content: "\e912";
+}
+
+.cmsms-demo-icon-KS VISA-machine:before {
+    content: "\e913";
+}
+
+.cmsms-demo-icon-money-bag:before {
+    content: "\e914";
+}
+
+.cmsms-demo-icon-money-1:before {
+    content: "\e915";
+}
+
+.cmsms-demo-icon-KS VISA-machine-1:before {
+    content: "\e916";
+}
+
+.cmsms-demo-icon-idea:before {
+    content: "\e917";
+}
+
+.cmsms-demo-icon-diamond:before {
+    content: "\e918";
+}
+
+.cmsms-demo-icon-tax:before {
+    content: "\e919";
+}
+
+.cmsms-demo-icon-tax-1:before {
+    content: "\e91a";
+}
+
+.cmsms-demo-icon-piggy-bank:before {
+    content: "\e91b";
+}
+
+.cmsms-demo-icon-wallet:before {
+    content: "\e91c";
+}
+
+.cmsms-demo-icon-profits-1:before {
+    content: "\e91d";
+}
+
+.cmsms-demo-icon-bank:before {
+    content: "\e91e";
+}
+
+.cmsms-demo-icon-coin-1:before {
+    content: "\e91f";
+}
+
+.cmsms-demo-icon-auction:before {
+    content: "\e920";
+}
+
+.cmsms-demo-icon-balance:before {
+    content: "\e921";
+}
+
+.cmsms-demo-icon-apple:before {
+    content: "\e922";
+}
+
+.cmsms-demo-icon-approved:before {
+    content: "\e923";
+}
+
+.cmsms-demo-icon-arrow-down:before {
+    content: "\e924";
+}
+
+.cmsms-demo-icon-arrow-left:before {
+    content: "\e925";
+}
+
+.cmsms-demo-icon-arrow-right:before {
+    content: "\e926";
+}
+
+.cmsms-demo-icon-arrow-up:before {
+    content: "\e927";
+}
+
+.cmsms-demo-icon-bullet:before {
+    content: "\e928";
+}
+
+.cmsms-demo-icon-card:before {
+    content: "\e929";
+}
+
+.cmsms-demo-icon-check1:before {
+    content: "\e92a";
+}
+
+.cmsms-demo-icon-check-1:before {
+    content: "\e92b";
+}
+
+.cmsms-demo-icon-check-circle:before {
+    content: "\e92c";
+}
+
+.cmsms-demo-icon-chevron-down:before {
+    content: "\e92d";
+}
+
+.cmsms-demo-icon-chevron-left:before {
+    content: "\e92e";
+}
+
+.cmsms-demo-icon-chevron-right:before {
+    content: "\e92f";
+}
+
+.cmsms-demo-icon-chevron-up:before {
+    content: "\e930";
+}
+
+.cmsms-demo-icon-close:before {
+    content: "\e931";
+}
+
+.cmsms-demo-icon-contact:before {
+    content: "\e932";
+}
+
+.cmsms-demo-icon-credit-card-1:before {
+    content: "\e933";
+}
+
+.cmsms-demo-icon-credit-card-2:before {
+    content: "\e934";
+}
+
+.cmsms-demo-icon-credit-card:before {
+    content: "\e935";
+}
+
+.cmsms-demo-icon-credit-card-payment-1:before {
+    content: "\e936";
+}
+
+.cmsms-demo-icon-credit-card-payment:before {
+    content: "\e937";
+}
+
+.cmsms-demo-icon-email:before {
+    content: "\e938";
+}
+
+.cmsms-demo-icon-form-1:before {
+    content: "\e939";
+}
+
+.cmsms-demo-icon-form-3:before {
+    content: "\e93a";
+}
+
+.cmsms-demo-icon-google-play:before {
+    content: "\e93b";
+}
+
+.cmsms-demo-icon-handshake:before {
+    content: "\e93c";
+}
+
+.cmsms-demo-icon-id:before {
+    content: "\e93d";
+}
+
+.cmsms-demo-icon-id-1:before {
+    content: "\e93e";
+}
+
+.cmsms-demo-icon-insurance:before {
+    content: "\e93f";
+}
+
+.cmsms-demo-icon-letter:before {
+    content: "\e940";
+}
+
+.cmsms-demo-icon-location:before {
+    content: "\e941";
+}
+
+.cmsms-demo-icon-log-in:before {
+    content: "\e942";
+}
+
+.cmsms-demo-icon-menu:before {
+    content: "\e943";
+}
+
+.cmsms-demo-icon-mortgage:before {
+    content: "\e944";
+}
+
+.cmsms-demo-icon-mortgage-loan-1:before {
+    content: "\e945";
+}
+
+.cmsms-demo-icon-search1:before {
+    content: "\e946";
+}
+
+.cmsms-demo-icon-purse:before {
+    content: "\e947";
+}
+
+.cmsms-demo-icon-briefcase:before {
+    content: "\e948";
+}
+
+.cmsms-demo-icon-credit-card1:before {
+    content: "\e949";
+}

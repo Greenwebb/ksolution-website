@@ -1,0 +1,260 @@
+    $('#newsletter').submit(function(e) {
+        alert('am here');
+        e.preventDefault();
+        $('#preloader').show();
+        var formData = new FormData(this);
+    
+        let email = $('#email').val();
+        // let session = localStorage.setItem('id',email);
+        
+        formData.append('session', session);
+        formData.append('email', email);
+        
+        $.ajax({
+                type:'POST',
+                url: "{{ route('subscribe-news')}}",
+                data: formData,
+                cache:false,
+                contentType: false,
+                processData: false,
+                dataType: 'json',
+            success: (data) => {
+                this.reset();  // $('#thanks').show();
+                // $('#preloader').hide();
+                // alert('Subscribed');
+                // window.location.href = "{{ route('about')}}";
+              
+            },
+            error: function(data){
+                // $('#preloader').hide();
+                alert(data.responseJSON.errors.files[0]);
+                console.log(data.responseJSON.errors);
+            }
+        });
+    });
+    let fname = $('#fname').val();
+
+
+
+    // Services
+
+    
+                                                
+    <section class="elementor-section elementor-top-section elementor-element elementor-element-7eb256c elementor-section-boxed elementor-section-height-default elementor-section-height-default cmsmasters-block-default" data-id="7eb256c" data-element_type="section">
+    <div class="elementor-container elementor-column-gap-no">
+        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0458274" data-id="0458274" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+                <div class="elementor-element elementor-element-19e7df1 cmsmasters-block-default cmsmasters-sticky-default elementor-widget elementor-widget-heading" data-id="19e7df1" data-element_type="widget" data-widget_type="heading.default">
+                    <div class="elementor-widget-container">
+                        <h2 class="elementor-heading-title elementor-size-default">open your checking account</h2>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-41cebb3 cmsmasters-block-default cmsmasters-sticky-default elementor-widget elementor-widget-heading" data-id="41cebb3" data-element_type="widget" data-widget_type="heading.default">
+                    <div class="elementor-widget-container">
+                        <h2 class="elementor-heading-title elementor-size-default">Compare Loan Accounts</h2>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-9f8fe4d cmsmasters-block-default cmsmasters-sticky-default elementor-widget elementor-widget-text-editor" data-id="9f8fe4d" data-element_type="widget" data-widget_type="text-editor.default">
+                    <div class="elementor-widget-container">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-02cf5ba elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default cmsmasters-block-default" data-id="02cf5ba" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+    <div class="elementor-container elementor-column-gap-wide">
+        <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-3351e63" data-id="3351e63" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+                <section class="elementor-section elementor-inner-section elementor-element elementor-element-0404975 elementor-section-boxed elementor-section-height-default elementor-section-height-default cmsmasters-block-default" data-id="0404975" data-element_type="section">
+                    <div class="elementor-container elementor-column-gap-no">
+                        <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-b69d8ac" data-id="b69d8ac" data-element_type="column">
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class="elementor-element elementor-element-e44a9fc cmsmasters-featured-box__graphic-align-left cmsmasters-block-default cmsmasters-sticky-default elementor-widget elementor-widget-cmsmasters-featured-box" data-id="e44a9fc" data-element_type="widget" data-widget_type="cmsmasters-featured-box.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="elementor-widget-cmsmasters-featured-box__wrapper">
+                                            <div class="elementor-widget-cmsmasters-featured-box__content">
+                                                <div class="elementor-widget-cmsmasters-featured-box__content-vertical-inner">
+                                                    <div class="elementor-widget-cmsmasters-featured-box__type-wrap elementor-widget-cmsmasters-featured-box__content-item">
+                                                        <h5 class="elementor-widget-cmsmasters-featured-box__title elementor-widget-cmsmasters-featured-box__content-item">Smart Checking Account</h5>
+                                                        <div class="elementor-widget-cmsmasters-featured-box__description elementor-widget-cmsmasters-featured-box__content-item">Simple checking account with no monthly maintenance fee</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-8ee3e73 cmsmasters-widget-layout-row cmsmasters-widget-align-stretch cmsmasters-widget-direction-default cmsmasters-widget-marker-element-icon cmsmasters-widget-marker-view-default cmsmasters-block-default cmsmasters-sticky-default elementor-widget elementor-widget-cmsmasters-icon-list cmsmasters-widget-icon-list" data-id="8ee3e73" data-element_type="widget" data-widget_type="cmsmasters-icon-list.default">
+                                    <div class="elementor-widget-container">
+                                        <ul class="cmsmasters-widget-icon-list-items">
+                                            <li class="cmsmasters-widget-icon-list-item active-icon-item">
+                                                <span class="cmsmasters-widget-icon-list-item-text-wrap">
+                                                    <span class="cmsmasters-widget-icon-list-item-icon">
+                                                        <span>
+                                                            <i aria-hidden="true" class="cmsmsdemo-icon- cmsms-demo-icon-check1"></i> </span>
+                                                    </span>
+                                                    <span class="cmsmasters-widget-icon-list-item-text-inner">
+                                                        <span class="cmsmasters-widget-icon-list-item-text">
+                                                            No monthly maintenance fee, no minimum balance </span>
+                                                    </span>
+                                                </span>
+                                            </li>
+                                            <li class="cmsmasters-widget-icon-list-item active-icon-item">
+                                                <span class="cmsmasters-widget-icon-list-item-text-wrap">
+                                                    <span class="cmsmasters-widget-icon-list-item-icon">
+                                                        <span>
+                                                            <i aria-hidden="true" class="cmsmsdemo-icon- cmsms-demo-icon-check1"></i> </span>
+                                                    </span>
+                                                    <span class="cmsmasters-widget-icon-list-item-text-inner">
+                                                        <span class="cmsmasters-widget-icon-list-item-text cmsmasters-widget-icon-list-item-text">
+                                                            Paper checks and every digital feature </span>
+                                                    </span>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-2372cba cmsmasters-widget-layout-column elementor-widget__width-initial cmsmasters-widget-align-column-left cmsmasters-widget-direction-default cmsmasters-value-position-bottom cmsmasters-widget-marker-element-icon cmsmasters-widget-marker-view-default cmsmasters-block-default cmsmasters-sticky-default elementor-widget elementor-widget-cmsmasters-icon-list cmsmasters-widget-icon-list" data-id="2372cba" data-element_type="widget" data-widget_type="cmsmasters-icon-list.default">
+                                    <div class="elementor-widget-container">
+                                        <ul class="cmsmasters-widget-icon-list-items">
+                                            <li class="cmsmasters-widget-icon-list-item">
+                                                <span class="cmsmasters-widget-icon-list-item-text-wrap">
+                                                    <span class="cmsmasters-widget-icon-list-item-text-inner">
+                                                        <span class="cmsmasters-widget-icon-list-item-text">
+                                                            ZMW 0 </span>
+                                                    </span>
+                                                </span>
+                                                <span class="cmsmasters-widget-icon-list-item-value cmsmasters-widget-icon-list-item-value">Maintenance Fee</span>
+                                            </li>
+                                            <li class="cmsmasters-widget-icon-list-item">
+                                                <span class="cmsmasters-widget-icon-list-item-text-wrap">
+                                                    <span class="cmsmasters-widget-icon-list-item-text-inner">
+                                                        <span class="cmsmasters-widget-icon-list-item-text cmsmasters-widget-icon-list-item-text">
+                                                            No </span>
+                                                    </span>
+                                                </span>
+                                                <span class="cmsmasters-widget-icon-list-item-value cmsmasters-widget-icon-list-item-value">Interest Bearing</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-31f72c6 elementor-widget-divider--view-line cmsmasters-block-default cmsmasters-sticky-default elementor-widget elementor-widget-divider" data-id="31f72c6" data-element_type="widget" data-widget_type="divider.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="elementor-divider">
+                                            <span class="elementor-divider-separator">
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-57e39b9 elementor-widget__width-initial cmsmasters-icon-arrangement-together cmsmasters-block-default cmsmasters-sticky-default elementor-widget elementor-widget-cmsmasters-button" data-id="57e39b9" data-element_type="widget" data-widget_type="cmsmasters-button.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="elementor-widget-cmsmasters-button__button-container">
+                                            <div class="elementor-widget-cmsmasters-button__button-container-inner"><a href="{{ route('contact-us') }}" class="cmsmasters-button-link elementor-widget-cmsmasters-button__button cmsmasters-icon-view-default cmsmasters-icon-shape- cmsmasters-button-size-sm" role="button"><span class="elementor-widget-cmsmasters-button__content-wrapper cmsmasters-align-icon-right"><span class="elementor-widget-cmsmasters-button__icon"><i aria-hidden="true" class="cmsmsdemo-icon- cmsms-demo-icon-arrow-right"></i></span><span class="elementor-widget-cmsmasters-button__text">Learn More</span></span></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-786cf78 elementor-widget__width-initial cmsmasters-block-default cmsmasters-sticky-default elementor-widget elementor-widget-cmsmasters-button" data-id="786cf78" data-element_type="widget" data-widget_type="cmsmasters-button.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="elementor-widget-cmsmasters-button__button-container">
+                                            <div class="elementor-widget-cmsmasters-button__button-container-inner"><a data-bs-toggle="modal" href="#exampleModalToggle" role="button" href="#" class="cmsmasters-button-link elementor-widget-cmsmasters-button__button cmsmasters-icon-view- cmsmasters-icon-shape- cmsmasters-button-size-sm" role="button"><span class="elementor-widget-cmsmasters-button__content-wrapper cmsmasters-align-icon-"><span class="elementor-widget-cmsmasters-button__text">Apply Now</span></span></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+       
+        
+    </div>
+</section>
+
+
+
+// Here is what y get acc Settings
+
+
+
+
+// FAQ Sections
+
+
+<section class="elementor-section elementor-top-section elementor-element elementor-element-a0fea07 elementor-section-boxed elementor-section-height-default elementor-section-height-default cmsmasters-block-default" data-id="a0fea07" data-element_type="section">
+<div class="elementor-container elementor-column-gap-no">
+    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d83c132" data-id="d83c132" data-element_type="column">
+        <div class="elementor-widget-wrap elementor-element-populated">
+            <div class="elementor-element elementor-element-e9dd0b5 cmsmasters-block-default cmsmasters-sticky-default elementor-widget elementor-widget-heading" data-id="e9dd0b5" data-element_type="widget" data-widget_type="heading.default">
+                <div class="elementor-widget-container">
+                    <div class="elementor-heading-title elementor-size-default">Useful information</div>
+                </div>
+            </div>
+            <div class="elementor-element elementor-element-677a15e cmsmasters-block-default cmsmasters-sticky-default elementor-widget elementor-widget-heading" data-id="677a15e" data-element_type="widget" data-widget_type="heading.default">
+                <div class="elementor-widget-container">
+                    <h2 class="elementor-heading-title elementor-size-default">Frequently asked questions</h2>
+                </div>
+            </div>
+            <div class="elementor-element elementor-element-b13140e cmsmasters-block-default cmsmasters-sticky-default elementor-widget elementor-widget-text-editor" data-id="b13140e" data-element_type="widget" data-widget_type="text-editor.default">
+                <div class="elementor-widget-container">
+                    <p>Got a question about how we’re organised, applying to work for us, or looking for financial or shareholder information? <a href="{{ route('faq') }}">View more Q&amp;A here</a></p>
+                </div>
+            </div>
+            <div class="elementor-element elementor-element-328422e cmsmasters-title-alignment-left cmsmasters-item-icon-position-left cmsmasters-trigger-icon-view-default cmsmasters-block-default cmsmasters-sticky-default elementor-widget elementor-widget-cmsmasters-toggles cmsmasters-widget-toggles" data-id="328422e" data-element_type="widget" data-settings="{&quot;toggles&quot;:[{&quot;toggle_title&quot;:&quot;I&#039;m having trouble accessing my account online. What should I do?&quot;,&quot;toggle_content&quot;:&quot;edit me later &quot;,&quot;_id&quot;:&quot;fea7400&quot;,&quot;content_type&quot;:&quot;toggle-content&quot;,&quot;saved_section&quot;:null,&quot;saved_template&quot;:null,&quot;item_icon&quot;:{&quot;value&quot;:&quot;&quot;,&quot;library&quot;:&quot;&quot;}},{&quot;toggle_title&quot;:&quot;What is the address I mail my credit card payment to?&quot;,&quot;toggle_content&quot;:&quot;edit me later &quot;,&quot;_id&quot;:&quot;81ec36f&quot;,&quot;content_type&quot;:&quot;toggle-content&quot;,&quot;saved_section&quot;:null,&quot;saved_template&quot;:null,&quot;item_icon&quot;:{&quot;value&quot;:&quot;&quot;,&quot;library&quot;:&quot;&quot;}},{&quot;toggle_title&quot;:&quot;How do I dispute a charge on my account?&quot;,&quot;toggle_content&quot;:&quot;edit me later &quot;,&quot;_id&quot;:&quot;aba9bfa&quot;,&quot;content_type&quot;:&quot;toggle-content&quot;,&quot;saved_section&quot;:null,&quot;saved_template&quot;:null,&quot;item_icon&quot;:{&quot;value&quot;:&quot;&quot;,&quot;library&quot;:&quot;&quot;}},{&quot;toggle_title&quot;:&quot;How do I contact the payment assistance team?&quot;,&quot;toggle_content&quot;:&quot;edit me later &quot;,&quot;_id&quot;:&quot;7f9978a&quot;,&quot;content_type&quot;:&quot;toggle-content&quot;,&quot;saved_section&quot;:null,&quot;saved_template&quot;:null,&quot;item_icon&quot;:{&quot;value&quot;:&quot;&quot;,&quot;library&quot;:&quot;&quot;}},{&quot;toggle_title&quot;:&quot;How do I activate a loan account?&quot;,&quot;toggle_content&quot;:&quot;edit me later &quot;,&quot;_id&quot;:&quot;7163114&quot;,&quot;content_type&quot;:&quot;toggle-content&quot;,&quot;saved_section&quot;:null,&quot;saved_template&quot;:null,&quot;item_icon&quot;:{&quot;value&quot;:&quot;&quot;,&quot;library&quot;:&quot;&quot;}}],&quot;type&quot;:&quot;toggles&quot;}" data-widget_type="cmsmasters-toggles.default">
+                <div class="elementor-widget-container">
+                    <div class="elementor-widget-cmsmasters-toggles__list" role="tablist">
+                        <div class="elementor-widget-cmsmasters-toggles__item">
+                            <h6 id="elementor-tab-title-5291" class="elementor-widget-cmsmasters-toggles__title" data-tab="1" role="tab" aria-controls="elementor-widget-cmsmasters-toggles__content-5291" aria-expanded="false"><a class="elementor-widget-cmsmasters-toggles__title-link cmsmasters_enable_trigger_icon" href="#"><span class="elementor-widget-cmsmasters-toggles__title-text">I'm having trouble accessing my account online. What should I do?</span></a>
+                                <span class="elementor-widget-cmsmasters-toggles__trigger" aria-hidden="true"><span class="elementor-widget-cmsmasters-toggles__trigger-closed"><i class="cmsmsdemo-icon- cmsms-demo-icon-arrow-down"></i></span>
+                                    <span class="elementor-widget-cmsmasters-toggles__trigger-opened"><i class="cmsmsdemo-icon- cmsms-demo-icon-arrow-up"></i></span>
+                                </span>
+                            </h6>
+                            <div id="elementor-widget-cmsmasters-toggles__content-5291" class="elementor-widget-cmsmasters-toggles__content elementor-clearfix" data-tab="1" role="tabpanel" aria-labelledby="elementor-tab-title-5291">edit me later </div>
+                        </div>
+                        <div class="elementor-widget-cmsmasters-toggles__item">
+                            <h6 id="elementor-tab-title-5292" class="elementor-widget-cmsmasters-toggles__title" data-tab="2" role="tab" aria-controls="elementor-widget-cmsmasters-toggles__content-5292" aria-expanded="false"><a class="elementor-widget-cmsmasters-toggles__title-link cmsmasters_enable_trigger_icon" href="#"><span class="elementor-widget-cmsmasters-toggles__title-text">What is the address I mail my credit card payment to?</span></a>
+                                <span class="elementor-widget-cmsmasters-toggles__trigger" aria-hidden="true"><span class="elementor-widget-cmsmasters-toggles__trigger-closed"><i class="cmsmsdemo-icon- cmsms-demo-icon-arrow-down"></i></span>
+                                    <span class="elementor-widget-cmsmasters-toggles__trigger-opened"><i class="cmsmsdemo-icon- cmsms-demo-icon-arrow-up"></i></span>
+                                </span>
+                            </h6>
+                            <div id="elementor-widget-cmsmasters-toggles__content-5292" class="elementor-widget-cmsmasters-toggles__content elementor-clearfix" data-tab="2" role="tabpanel" aria-labelledby="elementor-tab-title-5292">edit me later </div>
+                        </div>
+                        <div class="elementor-widget-cmsmasters-toggles__item">
+                            <h6 id="elementor-tab-title-5293" class="elementor-widget-cmsmasters-toggles__title" data-tab="3" role="tab" aria-controls="elementor-widget-cmsmasters-toggles__content-5293" aria-expanded="false"><a class="elementor-widget-cmsmasters-toggles__title-link cmsmasters_enable_trigger_icon" href="#"><span class="elementor-widget-cmsmasters-toggles__title-text">How do I dispute a charge on my account?</span></a>
+                                <span class="elementor-widget-cmsmasters-toggles__trigger" aria-hidden="true"><span class="elementor-widget-cmsmasters-toggles__trigger-closed"><i class="cmsmsdemo-icon- cmsms-demo-icon-arrow-down"></i></span>
+                                    <span class="elementor-widget-cmsmasters-toggles__trigger-opened"><i class="cmsmsdemo-icon- cmsms-demo-icon-arrow-up"></i></span>
+                                </span>
+                            </h6>
+                            <div id="elementor-widget-cmsmasters-toggles__content-5293" class="elementor-widget-cmsmasters-toggles__content elementor-clearfix" data-tab="3" role="tabpanel" aria-labelledby="elementor-tab-title-5293">edit me later </div>
+                        </div>
+                        <div class="elementor-widget-cmsmasters-toggles__item">
+                            <h6 id="elementor-tab-title-5294" class="elementor-widget-cmsmasters-toggles__title" data-tab="4" role="tab" aria-controls="elementor-widget-cmsmasters-toggles__content-5294" aria-expanded="false"><a class="elementor-widget-cmsmasters-toggles__title-link cmsmasters_enable_trigger_icon" href="#"><span class="elementor-widget-cmsmasters-toggles__title-text">How do I contact the payment assistance team?</span></a>
+                                <span class="elementor-widget-cmsmasters-toggles__trigger" aria-hidden="true"><span class="elementor-widget-cmsmasters-toggles__trigger-closed"><i class="cmsmsdemo-icon- cmsms-demo-icon-arrow-down"></i></span>
+                                    <span class="elementor-widget-cmsmasters-toggles__trigger-opened"><i class="cmsmsdemo-icon- cmsms-demo-icon-arrow-up"></i></span>
+                                </span>
+                            </h6>
+                            <div id="elementor-widget-cmsmasters-toggles__content-5294" class="elementor-widget-cmsmasters-toggles__content elementor-clearfix" data-tab="4" role="tabpanel" aria-labelledby="elementor-tab-title-5294">edit me later </div>
+                        </div>
+                        <div class="elementor-widget-cmsmasters-toggles__item">
+                            <h6 id="elementor-tab-title-5295" class="elementor-widget-cmsmasters-toggles__title" data-tab="5" role="tab" aria-controls="elementor-widget-cmsmasters-toggles__content-5295" aria-expanded="false"><a class="elementor-widget-cmsmasters-toggles__title-link cmsmasters_enable_trigger_icon" href="#"><span class="elementor-widget-cmsmasters-toggles__title-text">How do I activate a card?</span></a>
+                                <span class="elementor-widget-cmsmasters-toggles__trigger" aria-hidden="true"><span class="elementor-widget-cmsmasters-toggles__trigger-closed"><i class="cmsmsdemo-icon- cmsms-demo-icon-arrow-down"></i></span>
+                                    <span class="elementor-widget-cmsmasters-toggles__trigger-opened"><i class="cmsmsdemo-icon- cmsms-demo-icon-arrow-up"></i></span>
+                                </span>
+                            </h6>
+                            <div id="elementor-widget-cmsmasters-toggles__content-5295" class="elementor-widget-cmsmasters-toggles__content elementor-clearfix" data-tab="5" role="tabpanel" aria-labelledby="elementor-tab-title-5295">edit me later </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+
+
+{{-- <img width="1024" height="677" src="wp-content/uploads/sites/8/2021/10/service-7-30x30.jpg" class="attachment-large size-large cmsmasters_img cmsmasters-lazyload lazyload" alt="" loading="lazy" data-sizes="auto" data-ls-sizes="(max-width: 1024px) 100vw, 1024px" data-src="https://multibank.cmsmasters.net/classic/wp-content/uploads/sites/8/2021/10/service-7-1024x677.jpg" /> --}}
+

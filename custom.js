@@ -1,0 +1,2 @@
+$('#preloader').hide();
+// $('.reloader').hide();

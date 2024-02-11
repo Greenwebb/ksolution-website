@@ -1,0 +1,8 @@
+.elementor-159 .elementor-element.elementor-element-58dbfd51{padding:0px 0px 0px 0px;}.elementor-159 .elementor-element.elementor-element-18fa126d .cmsmasters-widget-image__wrap img{filter:brightness( 100% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 0deg );transition:all 0.3s;}.elementor-159 .elementor-element.elementor-element-4f2ac722{--title-color:var( --e-global-color-secondary );}.elementor-159 .elementor-element.elementor-element-4f2ac722 .cmsmasters-widget-title__heading{transition:all 0.3s;}@media(max-width:1024px){.elementor-159 .elementor-element.elementor-element-58dbfd51{padding:0px 0px 0px 0px;}}@media(max-width:767px){.elementor-159 .elementor-element.elementor-element-58dbfd51{padding:0px 0px 0px 0px;}}/* Start of your custom CSS rules for column, class: .elementor-element-6517e75e */ .elementor-159 .elementor-element.elementor-element-6517e75e:hover .cmsmasters-widget-image__wrap img {
+   filter: brightness( 100% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 
+0deg );
+}
+
+.elementor-159 .elementor-element.elementor-element-6517e75e:hover .cmsmasters-widget-title__heading a {
+    color: var(--e-global-color-primary) !important;
+} /* End of your custom CSS rules */
